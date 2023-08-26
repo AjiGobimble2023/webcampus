@@ -9,50 +9,50 @@ import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import AutoAwesomeMosaicOutlinedIcon from '@mui/icons-material/AutoAwesomeMosaicOutlined';
 
 const Menuitems = [
+  // {
+  //   title: "Dashboard",
+  //   icon: DashboardOutlinedIcon,
+  //   href: "/dashboards/dashboard1",
+  // },
+  // {
+  //   title: "Autocomplete",
+  //   icon: AddToPhotosOutlinedIcon,
+  //   href: "/form-elements/autocomplete",
+  // },
+  // {
+  //   title: "Buttons",
+  //   icon: AspectRatioOutlinedIcon,
+  //   href: "/form-elements/button",
+  // },
+  // {
+  //   title: "Checkbox",
+  //   icon: AssignmentTurnedInOutlinedIcon,
+  //   href: "/form-elements/checkbox",
+  // },
   {
-    title: "Dashboard",
-    icon: DashboardOutlinedIcon,
-    href: "/dashboards/dashboard1",
-  },
-  {
-    title: "Autocomplete",
-    icon: AddToPhotosOutlinedIcon,
-    href: "/form-elements/autocomplete",
-  },
-  {
-    title: "Buttons",
-    icon: AspectRatioOutlinedIcon,
-    href: "/form-elements/button",
-  },
-  {
-    title: "Checkbox",
-    icon: AssignmentTurnedInOutlinedIcon,
-    href: "/form-elements/checkbox",
-  },
-  {
-    title: "Radio",
+    title: "Berita",
     icon: AlbumOutlinedIcon,
-    href: "/form-elements/radio",
+    href: "/tables/news-table",
   },
   {
-    title: "Slider",
+    title: "Event",
     icon: SwitchCameraOutlinedIcon,
-    href: "/form-elements/slider",
+    href: "/tables/events-table",
   },
   {
-    title: "Switch",
+    title: "Topik Diskusi",
     icon: SwitchLeftOutlinedIcon,
-    href: "/form-elements/switch",
+    href: "/tables/topic-discussion-table",
+  },
+  {
+    title: "User",
+    icon: AutoAwesomeMosaicOutlinedIcon,
+    href: "/tables/users-table",
   },
   {
     title: "Form",
     icon: DescriptionOutlinedIcon,
     href: "/form-layouts/form-layouts",
-  },
-  {
-    title: "Table",
-    icon: AutoAwesomeMosaicOutlinedIcon,
-    href: "/tables/basic-table",
   },
 ];
 

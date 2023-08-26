@@ -9,7 +9,7 @@ import {
   Select,
 } from "@mui/material";
 
-import ExTable from "./ExTable";
+import NewsTable from "./NewsTable";
 
 const ProductPerformance = () => {
   const [age, setAge] = React.useState("10");
@@ -74,7 +74,7 @@ const ProductPerformance = () => {
             mt: 3,
           }}
         >
-          <ExTable />
+          <NewsTable />
         </Box>
       </CardContent>
     </Card>
