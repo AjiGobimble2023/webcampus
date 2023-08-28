@@ -1,5 +1,4 @@
 import React from "react";
-//import { Link } from 'react-router-dom';
 
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
@@ -62,6 +61,7 @@ const Header = (props) => {
         <IconButton
           color="inherit"
           aria-label="menu"
+          onClick={props.toggleMobileSidebar}
           sx={{
             display: {
               lg: "none",
@@ -69,36 +69,46 @@ const Header = (props) => {
             },
           }}
         >
-          
+          <MenuOutlinedIcon width="20" height="20" />
         </IconButton>
         <IconButton
           aria-label="menu"
           color="inherit"
           aria-controls="dd-menu"
           aria-haspopup="true"
+          onClick={handleClick5}
         >
+        
         </IconButton>
-        <Menu
-          id="dd-menu"
-          anchorEl={anchorEl5}
-          keepMounted
-          open={Boolean(anchorEl5)}
-          onClose={handleClose5}
-          anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
-          transformOrigin={{ horizontal: "left", vertical: "top" }}
-          sx={{
-            "& .MuiMenu-paper": {
-              width: "250px",
-              right: 0,
-              top: "70px !important",
-            },
-          }}
-        >
-        </Menu>
+        
         <Box flexGrow={1} />
 
-  
+        {/* ------------------------------------------- */}
+        {/* Notifications Dropdown */}
+        {/* ------------------------------------------- */}
+        <IconButton
+          aria-label="menu"
+          color="inherit"
+          aria-controls="notification-menu"
+          aria-haspopup="true"
+          onClick={handleClick}
+        >
+        </IconButton>
         
+        {/* ------------------------------------------- */}
+        {/* End Notifications Dropdown */}
+        {/* ------------------------------------------- */}
+        {/* ------------------------------------------- */}
+        {/* Profile Dropdown */}
+        {/* ------------------------------------------- */}
+        <Box
+          sx={{
+            width: "1px",
+            backgroundColor: "rgba(0,0,0,0.1)",
+            height: "25px",
+            ml: 1,
+          }}
+        ></Box>
         <Button
           aria-label="menu"
           color="inherit"
